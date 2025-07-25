@@ -31,20 +31,15 @@ It does the following:
 •	Receives and prints the output from the client
 
 
-## `client.py` (Reverse Shell)
+## Client.py (Victim shell):
+This script runs on the target/victim machine and is responsible for:
+•	Initiating a connection to the attacker’s (server) machine.
+•	Receiving commands from the attacker.
+•	Executing those commands using the system shell.
+•	Sending back the output to the attacker.
 
-This script runs on the **victim's machine** and connects back to the attacker.
 
-### 🔹 Code Overview
-
-- Connects to the attacker's IP and port `4444`.
-- Receives and executes shell commands.
-- Sends command output back to the attacker.
-- Handles directory navigation (e.g., `cd ..`).
-
----
-
-## 🛠 How to Use
+## How to Use
 
 ### ✅ On Attacker (Master) Machine:
 ```bash
@@ -59,21 +54,24 @@ python client.py
 ```
 
 
-```
-
 ## 🧪 Ethical Testing Platforms
 
 - [TryHackMe](https://tryhackme.com/)
 - [Hack The Box](https://www.hackthebox.com/)
 - [OverTheWire](https://overthewire.org/)
 
----
-
 ## 📜 License
 
 This project is licensed for educational use. Do **not** use this on devices or networks you do not own or have permission to test.
 
----
+## Conclusion:
+This project demonstrates the fundamentals of socket-based remote access tools by implementing a basic reverse shell using Python. It showcases how a client (victim) machine can be controlled remotely through a persistent connection initiated by the client itself. The attacker (server) can send shell commands, navigate the victim's file system, and receive command output in real-time.
+The simplicity of the implementation provides a hands-on understanding of:
+•	How TCP sockets can be used to establish bidirectional communication.
+•	The role of reverse shells in remote access tools.
+•	How basic command execution and file system interaction is done remotely.
+While this tool is for educational and ethical use only, it lays a strong foundation for understanding how backdoors work in penetration testing, red teaming, and ethical hacking. You can extend this project further by adding encryption, authentication, file transfer, or a multi-client architecture. 
+
 
 **Author:** *Arnab Kumar Hembram*  
 **Date:** *25-07-2025*
