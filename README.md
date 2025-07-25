@@ -10,33 +10,33 @@ This project demonstrates the creation of a **Reverse Shell Backdoor** using Pyt
 ## 📂 Project Structure
 This project consists of two parts: 
 <br>
-•	Server.py           # Server-side script for Listener/Controller running on Attacker machine.
-•	Client.py           #Client-side script for reverse Shell client to run on Victim machine.
+•	Server.py  <br>          # Server-side script for Listener/Controller running on Attacker machine.<br>
+•	Client.py    <br>       #Client-side script for reverse Shell client to run on Victim machine.
 
 ##  `server.py` (Master Controller)
 
-Server.py (Master Controller):
-This script runs on the attacker's machine and listens for incoming connections from the victim. Once connected, it sends shell commands and receives the output.
-It does the following:
-•	Listens for incoming connections on a specific IP and port.
-•	Accepts a connection from the client (victim).
-•	Sends commands to the victim.
-•	Receives and displays the output of the commands sent.
+Server.py (Master Controller):<br>
+This script runs on the attacker's machine and listens for incoming connections from the victim. Once connected, it sends shell commands and receives the output.<br>
+It does the following:<br>
+•	Listens for incoming connections on a specific IP and port.<br>
+•	Accepts a connection from the client (victim).<br>
+•	Sends commands to the victim.<br>
+•	Receives and displays the output of the commands sent.<br>
 
 
-##	Explanation:
-•	Binds to port 4444 and waits for incoming connections.
-•	Once connected, takes input from the attacker and sends it to the client.
-•	Receives and prints the output from the client
+##	Explanation:<br>
+•	Binds to port 4444 and waits for incoming connections.<br>
+•	Once connected, takes input from the attacker and sends it to the client.<br>
+•	Receives and prints the output from the client<br>
 
 
-## Client.py (Victim shell):
-This script runs on the target/victim machine and is responsible for:
-•	Initiating a connection to the attacker’s (server) machine.
-•	Receiving commands from the attacker.
-•	Executing those commands using the system shell.
-•	Sending back the output to the attacker.
-
+## Client.py (Victim shell):<br>
+This script runs on the target/victim machine and is responsible for:<br>
+•	Initiating a connection to the attacker’s (server) machine.<br>
+•	Receiving commands from the attacker.<br>
+•	Executing those commands using the system shell.<br>
+•	Sending back the output to the attacker.<br>
+<br>
 
 ## How to Use
 
