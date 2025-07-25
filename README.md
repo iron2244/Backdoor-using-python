@@ -64,12 +64,12 @@ python client.py
 This project is licensed for educational use. Do **not** use this on devices or networks you do not own or have permission to test.
 
 ## Conclusion:
-This project demonstrates the fundamentals of socket-based remote access tools by implementing a basic reverse shell using Python. It showcases how a client (victim) machine can be controlled remotely through a persistent connection initiated by the client itself. The attacker (server) can send shell commands, navigate the victim's file system, and receive command output in real-time.
-The simplicity of the implementation provides a hands-on understanding of:
-•	How TCP sockets can be used to establish bidirectional communication.
-•	The role of reverse shells in remote access tools.
-•	How basic command execution and file system interaction is done remotely.
-While this tool is for educational and ethical use only, it lays a strong foundation for understanding how backdoors work in penetration testing, red teaming, and ethical hacking. You can extend this project further by adding encryption, authentication, file transfer, or a multi-client architecture. 
+This project demonstrates the fundamentals of socket-based remote access tools by implementing a basic reverse shell using Python. It showcases how a client (victim) machine can be controlled remotely through a persistent connection initiated by the client itself. The attacker (server) can send shell commands, navigate the victim's file system, and receive command output in real-time.<br>
+The simplicity of the implementation provides a hands-on understanding of:<br>
+•	How TCP sockets can be used to establish bidirectional communication.<br>
+•	The role of reverse shells in remote access tools.<br>
+•	How basic command execution and file system interaction is done remotely.<br>
+While this tool is for educational and ethical use only, it lays a strong foundation for understanding how backdoors work in penetration testing, red teaming, and ethical hacking. You can extend this project further by adding encryption, authentication, file transfer, or a multi-client architecture. <br>
 
 
 **Author:** *Arnab Kumar Hembram*  
