@@ -8,11 +8,9 @@ This project demonstrates the creation of a **Reverse Shell Backdoor** using Pyt
 ⚠️ Legal Disclaimer: This code must **only** be used in environments where you have explicit permission. Unauthorized access or control over devices is **illegal and unethical**.
 
 ## 📂 Project Structure
-
-reverse_shell/
-├── server.py      # Server-side script for Listener/Controller running on Attacker machine.
-└── client.py      # Client-side script for reverse Shell client to run on Victim machine.
-
+This project consists of two parts:
+•	Server.py           # Server-side script for Listener/Controller running on Attacker machine.
+•	Client.py           #Client-side script for reverse Shell client to run on Victim machine.
 
 ##  `server.py` (Master Controller)
 
